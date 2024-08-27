@@ -1,0 +1,18 @@
+[package]
+name = "chia_wasm"
+version = "0.9.0"
+authors = ["Richard Kiss <him@richardkiss.com>"]
+edition = "2021"
+license = "Apache-2.0"
+description = "Code useful for implementing chia consensus."
+homepage = "https://github.com/goldcoin-gl/gold_rs"
+repository = "https://github.com/goldcoin-gl/gold_rs"
+readme = "README.md"
+
+[lib]
+name = "chia_wasm"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+wasm-bindgen = "0.2.92"
